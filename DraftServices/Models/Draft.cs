@@ -7,7 +7,7 @@ namespace DraftServices.Models
 {
     public class Draft
     {
-        [ScaffoldColumn(false)]
+        //[ScaffoldColumn(false)]
         public int Id { get; set; }
 
         [Required]
@@ -16,7 +16,7 @@ namespace DraftServices.Models
         [Required]
         public DateTime StartDate { get; set; }
 
-        [ScaffoldColumn(false)]
+        //[ScaffoldColumn(false)]
         public DateTime CreatedDate { get; set; }
 
         // navigation property
