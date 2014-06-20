@@ -1,0 +1,27 @@
+﻿@model IEnumerable<DraftServices.Models.Draft>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Drafts</h2>
+        <table class="table">
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompetitionType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Users.Count)
+                </td>
+            </tr>
+        }
+        </table>
+
+        <p>
+            <a class="btn btn-default" href="/user">Users</a>
+            <a class="btn btn-default" href="/draft">Drafts</a>
+        </p>
+    </div>
+</div>
